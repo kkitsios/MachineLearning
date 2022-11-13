@@ -1,0 +1,82 @@
+-------------------------R1-------------------------------------
+Kmeans with clustering 28x28 vector (Euclidean distance): Purity = | F_measure=
+Kmeans with clustering 28x28 vector (Cosine distance): Purity = | F_measure=
+Kmeans with clustering 28x28 vector (Manhattan distance): Purity = | F_measure=
+
+Hierarchical clustering with 28x28 vector (Euclidean distance): Purity = | F_measure=
+Hierarchical clustering with 28x28 vector (Cosine distance): Purity = | F_measure=
+Hierarchical clustering with 28x28 vector (Manhattan distance): Purity = | F_measure=
+
+-------------------------R2-------------------------------------
+
+Kmeans clustering with histogram (Euclidean distance): Purity = | F_measure=
+Kmeans clustering with histogram (Cosine distance): Purity = | F_measure=
+Kmeans clustering with histogram (Manhattan distance): Purity = | F_measure=
+
+Hierarchical clustering with histogram (Euclidean distance): Purity = | F_measure=
+Hierarchical clustering with histogram (Cosine distance): Purity = | F_measure=
+Hierarchical clustering with histogram (Manhattan distance): Purity = | F_measure=
+
+----------------------------------------------------------------
+
+Kmedoids with histogram (KL distance): Purity = 17.88% | F_measure = 89.048%
+output:
+Purity score 17.880%
+F-measure score 89.048%
+
+@@@@@@@@@@@@@@@@@@@@@@----KMEANS----@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+-----------------------Kmeans clustering algorithm---------------------------------
+########################R1-Data Represantation###########################
+kmeans.py:76: RuntimeWarning: divide by zero encountered in true_divide
+  if np.sum((current_centroid-original_centroid)/original_centroid*100.0) > 0.001:
+kmeans.py:76: RuntimeWarning: invalid value encountered in true_divide
+  if np.sum((current_centroid-original_centroid)/original_centroid*100.0) > 0.001:
+-----------------Euclidean------------------
+Purity score 20.000%
+F-measure score 20.000%
+-----------------Manhattan------------------
+Purity score 20.000%
+F-measure score 20.000%
+/usr/home/students/st-admin/tasakos/.local/lib/python3.6/site-packages/numpy/lib/function_base.py:380: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis)
+-----------------Cosine------------------
+Purity score 10.000%
+F-measure score 18.182%
+########################R2-Data Represantation###########################
+-----------------Euclidean------------------
+Purity score 31.020%
+F-measure score 75.881%
+-----------------Manhattan------------------
+Purity score 27.990%
+F-measure score 80.428%
+/usr/home/students/st-admin/tasakos/.local/lib/python3.6/site-packages/numpy/lib/function_base.py:380: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis)
+-----------------Cosine------------------
+Purity score 10.000%
+F-measure score 18.182%
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@----Hierarchical----@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+-----------------------Hierarchical clustering algorithm---------------------------------
+########################R2-Data Represantation###########################
+-----------------Euclidean------------------
+Purity score 28.240%
+F-measure score 12.355%
+-----------------Manhattan------------------
+Purity score 26.260%
+F-measure score 42.998%
+-----------------Cosine------------------
+Purity score 29.480%
+F-measure score 74.590%
+########################R1-Data Represantation###########################
+-----------------Euclidean------------------
+Purity score 47.400%
+F-measure score 79.292%
+-----------------Manhattan------------------
+Purity score 43.300%
+F-measure score 98.818%
+-----------------Cosine------------------
+Purity score 40.150%
+F-measure score 98.405%
+
+
+
